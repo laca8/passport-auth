@@ -54,7 +54,7 @@ const Auth = () => {
         setError(null)
 
         try {
-            window.location.href = "http://localhost:3000/api/auth/google";
+            window.location.href = "https://passport-auth-nrm2-l211fjfos-childcn.vercel.app/api/auth/google";
             // const res = await axios.get('/api/auth/google/callback')
             // console.log(res.data);
             // localStorage.setItem('user', JSON.stringify(res.data))

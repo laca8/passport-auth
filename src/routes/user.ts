@@ -25,8 +25,9 @@ router.get(
 router.get(
   "/google/callback",
   passport.authenticate("google", {
-    successRedirect: "http://localhost:3000", // توجه المستخدم بعد النجاح
-    failureRedirect: "http://localhost:3000/auth",
+    successRedirect: "https://passport-auth-nrm2-l211fjfos-childcn.vercel.app", // توجه المستخدم بعد النجاح
+    failureRedirect:
+      "https://passport-auth-nrm2-l211fjfos-childcn.vercel.app/auth",
   }),
   googleAuthCallback
 );

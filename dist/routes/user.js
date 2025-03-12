@@ -11,8 +11,8 @@ router.post("/register", user_1.register);
 router.post("/login", passport_1.default.authenticate("local", { session: false }), user_1.login);
 router.get("/google", passport_1.default.authenticate("google", { scope: ["profile", "email"] }));
 router.get("/google/callback", passport_1.default.authenticate("google", {
-    successRedirect: "http://localhost:3000", // توجه المستخدم بعد النجاح
-    failureRedirect: "http://localhost:3000/auth",
+    successRedirect: "https://passport-auth-nrm2-l211fjfos-childcn.vercel.app", // توجه المستخدم بعد النجاح
+    failureRedirect: "https://passport-auth-nrm2-l211fjfos-childcn.vercel.app/auth",
 }), user_1.googleAuthCallback);
 router.get("/user", user_1.getUser);
 exports.default = router;
