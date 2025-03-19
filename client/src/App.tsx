@@ -18,8 +18,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/auth' element={<Auth />}></Route>
+        <Route path='/dash' element={<Home />}></Route>
+        <Route path='/' element={<Auth />}></Route>
       </Routes>
     </BrowserRouter>
   )
