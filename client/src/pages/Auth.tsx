@@ -27,6 +27,7 @@ const Auth = () => {
             const res = await axios.post('/api/auth/register', { email, password })
             console.log(res.data);
             localStorage.setItem('user', res.data.user)
+            window.location.href='/dash'
         } catch (error: any) {
             setError(error.message || "An error occurred during authentication")
         } finally {
@@ -43,6 +44,7 @@ const Auth = () => {
             const res = await axios.post('/api/auth/login', { email, password })
             console.log(res.data);
             localStorage.setItem('user', JSON.stringify(res.data))
+              window.location.href='/dash'
         } catch (error: any) {
             setError(error.message || "An error occurred during authentication")
         } finally {
